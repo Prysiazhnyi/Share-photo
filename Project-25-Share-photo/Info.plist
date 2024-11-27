@@ -2,7 +2,18 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>UIApplicationSceneManifest</key>
+
+ <!-- Разрешение на доступ к локальной сети -->
+    <key>NSLocalNetworkUsageDescription</key>
+    <string>Приложение использует локальную сеть для подключения к другим устройствам.</string>
+
+    <!-- Bonjour сервисы для использования Multipeer Connectivity -->
+    <key>NSBonjourServices</key>
+    <array>
+        <string>_hws-project25._tcp</string>
+    </array>
+
+<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
 		<false/>
